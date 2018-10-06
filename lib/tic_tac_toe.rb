@@ -109,17 +109,17 @@ class TicTacToe
     end
   end
 
-  def winner(board)
-    if won?(board)
+  def winner
+    if won?
       x_count = 0
       o_count = 0
-      board.each do |element|
-      if element == "X"
-        x_count += 1
-      elsif element == "O"
-        o_count += 1
+      @board.each do |element|
+        if element == "X"
+          x_count += 1
+        elsif element == "O"
+          o_count += 1
+          end
         end
-      end
       if x_count > o_count
         return "X"
       else
