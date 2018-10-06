@@ -12,7 +12,7 @@ class TicTacToe
     [1,4,7],  # Middle Column
     [2,5,8]   # Right Column
   ]
-  def display_board(@board)
+  def display_board
     puts " #{board[0]} | #{board[1]} | #{board[2]} "
     puts "-----------"
     puts " #{board[3]} | #{board[4]} | #{board[5]} "
