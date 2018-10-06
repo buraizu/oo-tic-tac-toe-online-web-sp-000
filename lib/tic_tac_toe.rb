@@ -48,4 +48,12 @@ class TicTacToe
     return counter
   end
 
+  def current_player
+    if turn_count(@board).odd?
+      return 'O'
+    else
+      return 'X'
+    end
+  end
+
 end
